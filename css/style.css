@@ -682,11 +682,14 @@ body {
 
 .header {
   height: 95dvh;
-  background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
+  background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero-small.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 75dvh, 0 100%); }
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+    .header {
+      background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg"); } }
   @media (max-width: 37.5em) {
     .header {
       clip-path: polygon(0 0, 100% 0, 100% 85dvh, 0 100%); } }
@@ -875,7 +878,7 @@ body {
   margin-top: -20vh; }
   @media (max-width: 56.25em) {
     .section-about {
-      padding: 20rem 0; } }
+      padding: 25rem 0; } }
 
 .section-features {
   padding: 20rem 0;
